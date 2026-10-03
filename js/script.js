@@ -6,6 +6,7 @@ function AlterarTema(){
     const inicio = document.getElementById("inicio")
     const consoles = document.getElementById("consoles")
     const contato = document.getElementById("contato")
+    const icone_tema = document.getElementById("img-tema")
 
     const produtos = document.getElementsByClassName("produto")
     const legendas = document.getElementsByClassName("produto-legenda")
@@ -24,6 +25,8 @@ function AlterarTema(){
         inicio.style.background = "#1b343b"
         consoles.style.background = "#1b343b"
         contato.style.background = "#1b343b"
+
+        icone_tema.src = "img/interatividade/sun.png"
 
         for(let i = 0; i < produtos.length; i++){
             produtos[i].style.background = "#1b343b"
@@ -64,6 +67,8 @@ function AlterarTema(){
         inicio.style.background = "#ffffff"
         consoles.style.background = "#ffffff"
         contato.style.background = "#ffffff"
+
+        icone_tema.src = "img/interatividade/moon.png"
 
         for(let i = 0; i < produtos.length; i++){
             produtos[i].style.background = "#ffffff"

@@ -1,295 +1,274 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Loja de videogames - Compre consoles, jogos e acessórios com as melhores ofertas.">
-    <meta name="keywords" content="playstation5, xboxseriesx, nintendoswitch, Nintendo, consoles, jogos">
-    
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Loja de videogames - Compre consoles, jogos e acessórios com as melhores ofertas."
+    />
+    <meta
+      name="keywords"
+      content="playstation5, xboxseriesx, nintendoswitch, Nintendo, consoles, jogos"
+    />
+
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <title>GameZone - Loja de Videogames</title>
-</head>
+  </head>
 
-<body id="container" class="container">
+  <body id="container" class="container">
     <header id="cabecalho" class="cabecalho">
-        <h1>🎮 GameZone</h1>
+      <h1>🎮 GameZone</h1>
 
-        <p>Sua loja de jogos, consoles e acessórios</p>
+      <p>Sua loja de jogos, consoles e acessórios</p>
     </header>
 
     <nav id="navegacao" class="navegacao">
-        <ul class="menu">
-            <li>
-                <a href="#inicio">
-                    Início
-                </a>
-            </li>
+      <ul class="menu">
+        <li>
+          <a href="#inicio"> Início </a>
+        </li>
 
-            <li>
-                <a href="#produtos">
-                    Produtos
-                </a>
-            </li>
+        <li>
+          <a href="#produtos"> Produtos </a>
+        </li>
 
-            <li>
-                <a href="#consoles">
-                    Consoles
-                </a>
-            </li>
+        <li>
+          <a href="#consoles"> Consoles </a>
+        </li>
 
-            <li>
-                <a href="#contato">
-                    Contato
-                </a>
-            </li>
+        <li>
+          <a href="#contato"> Contato </a>
+        </li>
 
-            <li>
-                <button id="botao-tema" class="botao_tema" onclick="AlterarTema()">
-                    <img src="img/interatividade/sun.png" alt="">
-                </button>
-            </li>
-        </ul>
+        <li>
+          <button id="botao-tema" class="botao_tema" onclick="AlterarTema()">
+            <img id="img-tema" src="img/interatividade/moon.png" alt="" />
+          </button>
+        </li>
+      </ul>
     </nav>
 
     <main id="conteudo" class="conteudo">
-        <section id="inicio" class="secao-inicio">
-            <h2>Bem-vindo à GameZone!</h2>
+      <section id="inicio" class="secao-inicio">
+        <h2>Bem-vindo à GameZone!</h2>
+
+        <p>
+          Encontre os melhores jogos, consoles e acessórios para deixar sua
+          experiência ainda mais divertida.
+        </p>
+
+        <p>Confira nossos produtos e aproveite nossas ofertas!</p>
+      </section>
+
+      <section id="produtos" class="secao-produtos">
+        <h2 class="titulo-secao">🎮 Produtos em destaque</h2>
+
+        <div class="produtos-lista">
+          <article class="produto">
+            <h3>PlayStation 5</h3>
+
+            <figure class="produto-imagem">
+              <img
+                src="img/playstation5.png"
+                alt="Console PlayStation 5 na cor branca com controle DualSense ao lado"
+                width="200"
+                height="200"
+              />
+
+              <figcaption class="produto-legenda">
+                Edição Standard 825 GB
+              </figcaption>
+            </figure>
 
             <p>
-                Encontre os melhores jogos, consoles e acessórios
-                para deixar sua experiência ainda mais divertida.
+              Console PlayStation 5 com armazenamento de 825 GB e tecnologia Ray
+              Tracing.
             </p>
 
             <p>
-                Confira nossos produtos e aproveite nossas ofertas!
+              <strong>Preço: R$ 3.999,00</strong>
             </p>
-        </section>
 
-        <section id="produtos" class="secao-produtos">
-            <h2 class="titulo-secao">🎮 Produtos em destaque</h2>
+            <a href="#contato" class="botao-interesse"> Tenho interesse </a>
+          </article>
 
-            <div class="produtos-lista">
-                <article class="produto">
-                    <h3>PlayStation 5</h3>
+          <article class="produto">
+            <h3>Xbox Series X</h3>
 
-                    <figure class="produto-imagem">
-                        <img
-                            src="img/playstation5.png"
-                            alt="Console PlayStation 5 na cor branca com controle DualSense ao lado"
-                            width="200"
-                            height="200"
-                        >
+            <figure class="produto-imagem">
+              <img
+                src="img/xboxseriesx.png"
+                alt="Console Xbox Series X preto na vertical com controle sem fio"
+                width="200"
+                height="200"
+              />
 
-                        <figcaption class="produto-legenda">
-                            Edição Standard 825 GB
-                        </figcaption>
-                    </figure>
-
-                    <p>
-                        Console PlayStation 5 com armazenamento de 825 GB e tecnologia Ray Tracing.
-                    </p>
-
-                    <p>
-                        <strong>Preço: R$ 3.999,00</strong>
-                    </p>
-
-                    <a href="#contato" class="botao-interesse">
-                        Tenho interesse
-                    </a>
-                </article>
-
-
-                <article class="produto">
-                    <h3>Xbox Series X</h3>
-
-                    <figure class="produto-imagem">
-                        <img
-                            src="img/xboxseriesx.png"
-                            alt="Console Xbox Series X preto na vertical com controle sem fio"
-                            width="200"
-                            height="200"
-                        >
-
-                        <figcaption class="produto-legenda">
-                            Edição Digital/Disco 1 TB
-                        </figcaption>
-                    </figure>
-
-                    <p>
-                        Console Xbox Series X com armazenamento de 1 TB e alto desempenho.
-                    </p>
-
-                    <p>
-                        <strong>Preço: R$ 4.299,00</strong>
-                    </p>
-
-                    <a href="#contato" class="botao-interesse">
-                        Tenho interesse
-                    </a>
-                </article>
-
-                <article class="produto">
-                    <h3>Nintendo Switch</h3>
-
-                    <figure class="produto-imagem">
-                        <img
-                            src="img/nintendoswitch.png"
-                            alt="Console Nintendo Switch com controles Joy-Con azul e vermelho"
-                            width="200"
-                            height="200"
-                        >
-
-                        <figcaption class="produto-legenda">
-                            Modelo Portátil e TV
-                        </figcaption>
-                    </figure>
-
-                    <p>
-                        Console Nintendo Switch Portátil para jogar em casa ou em qualquer lugar.
-                    </p>
-
-                    <p>
-                        <strong>Preço: R$ 2.299,00</strong>
-                    </p>
-
-                    <a href="#contato" class="botao-interesse">
-                        Tenho interesse
-                    </a>
-                </article>
-            </div>
-        </section>
-
-        <section id="consoles" class="secao-consoles">
-            <h2 class="titulo-secao">📊 Comparação de consoles</h2>
-
-            <div class="tabela-container">
-                <table class="tabela-consoles">
-                    <caption class="tabela-legenda">
-                        Tabela comparativa de especificações básicas e preços
-                    </caption>
-
-                    <thead class="tabela-cabecalho">
-                        <tr class="tabela-titulo">
-                            <th scope="col" class="celula-tabela">Console</th>
-                            <th scope="col" class="celula-tabela">Armazenamento</th>
-                            <th scope="col" class="celula-tabela">Fabricante</th>
-                            <th scope="col" class="celula-tabela">Preço</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <th scope="row" class="celula-tabela celula-titulo">
-                                PlayStation 5
-                            </th>
-                            <td class="celula-tabela">825 GB</td>
-                            <td class="celula-tabela">Sony</td>
-                            <td class="celula-tabela">R$ 3.999,00</td>
-                        </tr>
-
-                        <tr class="linha-alternada">
-                            <th scope="row" class="celula-tabela celula-titulo">
-                                Xbox Series X
-                            </th>
-                            <td class="celula-tabela">1 TB</td>
-                            <td class="celula-tabela">Microsoft</td>
-                            <td class="celula-tabela">R$ 4.299,00</td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row" class="celula-tabela celula-titulo">
-                                Nintendo Switch
-                            </th>
-                            <td class="celula-tabela">32 GB</td>
-                            <td class="celula-tabela">Nintendo</td>
-                            <td class="celula-tabela">R$ 2.299,00</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-
-        </section>
-
-        <section id="contato" class="secao-contato">
-            <h2>📩 Entre em contato</h2>
+              <figcaption class="produto-legenda">
+                Edição Digital/Disco 1 TB
+              </figcaption>
+            </figure>
 
             <p>
-                Preencha o formulário abaixo para entrar em contato conosco.
+              Console Xbox Series X com armazenamento de 1 TB e alto desempenho.
             </p>
 
-            <form class="formulario">
+            <p>
+              <strong>Preço: R$ 4.299,00</strong>
+            </p>
 
-                <div class="campo-formulario">
-                    <label for="nome" class="label-formulario">
-                        Nome:
-                    </label>
+            <a href="#contato" class="botao-interesse"> Tenho interesse </a>
+          </article>
 
-                    <input
-                        type="text"
-                        id="nome"
-                        class="input-formulario"
-                        name="nome"
-                        placeholder="Digite seu nome"
-                        required
-                    >
-                </div>
+          <article class="produto">
+            <h3>Nintendo Switch</h3>
 
-                <div class="campo-formulario">
-                    <label for="email" class="label-formulario">
-                        E-mail:
-                    </label>
+            <figure class="produto-imagem">
+              <img
+                src="img/nintendoswitch.png"
+                alt="Console Nintendo Switch com controles Joy-Con azul e vermelho"
+                width="200"
+                height="200"
+              />
 
-                    <input
-                        type="email"
-                        id="email"
-                        class="input-formulario"
-                        name="email"
-                        placeholder="Digite seu e-mail"
-                        required
-                    >
-                </div>
+              <figcaption class="produto-legenda">
+                Modelo Portátil e TV
+              </figcaption>
+            </figure>
 
-                <div class="campo-formulario">
-                    <label for="mensagem" class="label-formulario">
-                        Mensagem:
-                    </label>
+            <p>
+              Console Nintendo Switch Portátil para jogar em casa ou em qualquer
+              lugar.
+            </p>
 
-                    <textarea
-                        id="mensagem"
-                        class="input-formulario"
-                        name="mensagem"
-                        rows="5"
-                        placeholder="Digite sua mensagem"
-                        required
-                    ></textarea>
-                </div>
+            <p>
+              <strong>Preço: R$ 2.299,00</strong>
+            </p>
 
-                <button type="submit" class="botao-enviar">
-                    Enviar mensagem
-                </button>
-            </form>
-        </section>
+            <a href="#contato" class="botao-interesse"> Tenho interesse </a>
+          </article>
+        </div>
+      </section>
+
+      <section id="consoles" class="secao-consoles">
+        <h2 class="titulo-secao">📊 Comparação de consoles</h2>
+
+        <div class="tabela-container">
+          <table class="tabela-consoles">
+            <caption class="tabela-legenda">
+              Tabela comparativa de especificações básicas e preços
+            </caption>
+
+            <thead class="tabela-cabecalho">
+              <tr class="tabela-titulo">
+                <th scope="col" class="celula-tabela">Console</th>
+                <th scope="col" class="celula-tabela">Armazenamento</th>
+                <th scope="col" class="celula-tabela">Fabricante</th>
+                <th scope="col" class="celula-tabela">Preço</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <th scope="row" class="celula-tabela celula-titulo">
+                  PlayStation 5
+                </th>
+                <td class="celula-tabela">825 GB</td>
+                <td class="celula-tabela">Sony</td>
+                <td class="celula-tabela">R$ 3.999,00</td>
+              </tr>
+
+              <tr class="linha-alternada">
+                <th scope="row" class="celula-tabela celula-titulo">
+                  Xbox Series X
+                </th>
+                <td class="celula-tabela">1 TB</td>
+                <td class="celula-tabela">Microsoft</td>
+                <td class="celula-tabela">R$ 4.299,00</td>
+              </tr>
+
+              <tr>
+                <th scope="row" class="celula-tabela celula-titulo">
+                  Nintendo Switch
+                </th>
+                <td class="celula-tabela">32 GB</td>
+                <td class="celula-tabela">Nintendo</td>
+                <td class="celula-tabela">R$ 2.299,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="contato" class="secao-contato">
+        <h2>📩 Entre em contato</h2>
+
+        <p>Preencha o formulário abaixo para entrar em contato conosco.</p>
+
+        <form class="formulario">
+          <div class="campo-formulario">
+            <label for="nome" class="label-formulario"> Nome: </label>
+
+            <input
+              type="text"
+              id="nome"
+              class="input-formulario"
+              name="nome"
+              placeholder="Digite seu nome"
+              required
+            />
+          </div>
+
+          <div class="campo-formulario">
+            <label for="email" class="label-formulario"> E-mail: </label>
+
+            <input
+              type="email"
+              id="email"
+              class="input-formulario"
+              name="email"
+              placeholder="Digite seu e-mail"
+              required
+            />
+          </div>
+
+          <div class="campo-formulario">
+            <label for="mensagem" class="label-formulario"> Mensagem: </label>
+
+            <textarea
+              id="mensagem"
+              class="input-formulario"
+              name="mensagem"
+              rows="5"
+              placeholder="Digite sua mensagem"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="botao-enviar">Enviar mensagem</button>
+        </form>
+      </section>
     </main>
 
     <footer id="rodape">
-        <p>
-            <strong>GameZone - Loja de Videogames</strong>
-        </p>
+      <p>
+        <strong>GameZone - Loja de Videogames</strong>
+      </p>
 
-        <p>
-            <small>© 2026 GameZone. Todos os direitos reservados.</small>
-        </p>
+      <p>
+        <small>© 2026 GameZone. Todos os direitos reservados.</small>
+      </p>
 
-        <p>
-            E-mail:
-            <a href="mailto:contato@gamezone.com" class="email-contato">
-                contato@gamezone.com
-            </a>
-        </p>
+      <p>
+        E-mail:
+        <a href="mailto:contato@gamezone.com" class="email-contato">
+          contato@gamezone.com
+        </a>
+      </p>
     </footer>
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
